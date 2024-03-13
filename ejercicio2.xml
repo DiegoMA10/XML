@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <pedido>
+        <destinatario>
+            <nombre>Andrés</nombre>
+            <apellidos>Delgado Martínez</apellidos>
+        </destinatario>
+        <articulos>
+            <articulo>bicicleta BTT 340 <precio>199€</precio></articulo>
+        </articulos>
+        <entrega>
+            <dirrecion>calle Soria 4-15</dirrecion>
+            <fecha>9-5-2017</fecha>
+        </entrega>
+    </pedido>
+
+    <pedido>
+     <destinatario>
+            <nombre>Ana</nombre>
+            <apellidos>Díaz Ramos</apellidos>
+        </destinatario>
+        <articulos>
+            <articulo>ordenador ASUS F555BA <precio>414,90€</precio></articulo>
+            <articulo>SSD Samsung T3 500GB<precio>189€</precio></articulo>
+        </articulos>
+        <entrega>
+            <dirrecion> calle Mirador 1oA</dirrecion>
+            <fecha>10-5-2017</fecha>
+        </entrega>
+    </pedido>
+
+</pedidos>
