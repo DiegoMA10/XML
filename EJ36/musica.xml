@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<discos>
+
+    <disco id="CDP 7 46437 2">
+        <titulo>A HARD DAY'S NIGHT</titulo>
+        
+        <canciones>
+            <cancion>A Hard Day's Night</cancion>
+            <cancion>I Should Have Known Better</cancion>
+        <canciones>
+    </disco>
+
+</discos>
