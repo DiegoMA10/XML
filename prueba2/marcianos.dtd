@@ -1,0 +1,6 @@
+<!ELEMENT club_extraterrestres (extraterrestre+)>
+<!ELEMENT extraterrestre EMPTY>
+<!ATTLIST extraterrestre id ID #REQUIRED
+                  nombre CDATA #REQUIRED
+                  planeta_origen CDATA #REQUIRED
+                  amigos IDREFS #IMPLIED>
