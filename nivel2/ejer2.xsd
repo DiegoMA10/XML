@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:group name="grupoMascotas">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="especie" type="xs:string"></xs:element>
+            <xs:element name="raza" type="xs:string" minOccurs="0"></xs:element>
+            <xs:element name="edad" type="xs:float"></xs:element>
+            <xs:element name="precio" type="xs:integer"></xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="tipoAnimal">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="perro"></xs:enumeration>
+            <xs:enumeration value="gato"></xs:enumeration>
+            <xs:enumeration value="ave"></xs:enumeration>
+            <xs:enumeration value="reptil"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="tienda">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mascota" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="grupoMascotas"></xs:group>
+                        </xs:sequence>
+                        <xs:attribute name="tipo" type="tipoAnimal"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
